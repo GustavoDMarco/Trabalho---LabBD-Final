@@ -3,6 +3,13 @@
 
 <br>
 
+## Informações de Entrega do Projeto
+> Administrador do site = login: admin / senha: admin123
+
+> https://cloud.mongodb.com/v2/691ec15ac98ec91e5d8aa887#/overview
+
+> login e senha mongodb = login: gustavomarco_db_user / senha: labbd123
+
 ## Funcionalidades
 
 ### Candidatos
@@ -22,19 +29,12 @@ A infraestrutura foi desenhada pensando em escalabilidade e facilidade de deploy
 - **Frontend/Backend:** [Streamlit](https://streamlit.io/) (Python)
 - **Banco de Dados:** [MongoDB Atlas](https://www.mongodb.com/atlas/database) (NoSQL)
   - Utilizado para armazenar documentos flexíveis de Vagas e Currículos.
-  - Uso de *Text Index* para busca e recomendação.
 - **Geolocalização:** PyDeck
 
 ### Estrutura do Banco de Dados (MongoDB)
 Foram utilizadas duas coleções principais como dataset `labbd`:
 1. **vagas**: Armazena título, descrição, salário, requisitos, empresa e localização.
 2. **curriculos**: Armazena dados pessoais, formação, skills e experiência profissional.
-
-## Informações de Entrega do Projeto
-> https://cloud.mongodb.com/v2/691ec15ac98ec91e5d8aa887#/overview
-> login e senha mongodb = login: gustavomarco_db_user / senha: labbd123
-
-> Administrador do site = login: admin / senha: admin123
 
 <br>
 
@@ -49,9 +49,10 @@ Foram utilizadas duas coleções principais como dataset `labbd`:
 │   ├── cadastro_curriculo.py   # Formulário de currículos
 │   ├── listar_vagas.py         # Listagem e exclusão de vagas
 │   ├── listar_curriculos.py    # Listagem e exclusão de currículos
-│   ├── recomendacao.py         # Algoritmo de match Vaga x Candidato
-│   ├── localiza_cidades.py     # Mapa de calor das vagas
-│   └── chatbot_rag.py          # Busca com IA (Linguagem Natural)
+│   ├── recomendacao.py         # Score Vaga x Candidato
+│   ├── localiza_cidades.py     # Mapa de localização das vagas
+├── cidades/
+│   ├── cidades_brasil.csv       # DataSet de cidades para mapa de localização das vagas
 └── requirements.txt            # Dependências do projeto
 ```  
 
