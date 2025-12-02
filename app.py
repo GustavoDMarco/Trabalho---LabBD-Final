@@ -1,12 +1,6 @@
 import streamlit as st
 from connection_mongo import vagas, curriculos
 
-
-import os
-st.write("MONGO_URI carregado?", os.environ.get("MONGO_URI") is not None)
-
-
-
 st.set_page_config(
     page_title="Sistema de Vagas e Currículos",
     page_icon="💼",
