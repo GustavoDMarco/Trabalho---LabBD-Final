@@ -1,5 +1,5 @@
 # Trabalho Laboratório de Banco de Dados
-<h3><a href="https://curriculos-e-vagas.streamlit.app/">Sistema de Vagas e Currículos</a></h1>
+<h3><a href="https://curriculos-e-vagas.streamlit.app/">Site StreamLit</a></h1>
 
 <br>
 
