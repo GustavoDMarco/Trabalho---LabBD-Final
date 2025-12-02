@@ -1,6 +1,5 @@
 # Trabalho Laboratório de Banco de Dados
 <h3>URL STREAMLIT: https://curriculos-e-vagas.streamlit.app
-
 <br>
 
 ## Informações de Entrega do Projeto
