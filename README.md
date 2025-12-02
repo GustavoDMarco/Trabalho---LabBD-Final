@@ -1,5 +1,5 @@
 # Trabalho Laboratório de Banco de Dados
-<h3><a href="LINK DO DEPLOY!!">Sistema de Vagas e Currículos</a></h1>
+<h3><a href="[LINK DO DEPLOY!!](https://curriculos-e-vagas.streamlit.app/)">Sistema de Vagas e Currículos</a></h1>
 
 <br>
 
@@ -15,9 +15,6 @@
 - **Geolocalização:** Visualização interativa (PyDeck) das vagas distribuídas pelo mapa do Brasil.
 - **Dashboard Administrativo:** Controle total sobre currículos e vagas cadastrados.
 
-### Inteligência Artificial (RAG)
-- Busca em linguagem natural integrada. O usuário pode digitar *"Quero candidatos com experiência em Python que moram em São Paulo"* e o sistema utiliza OpenAI para filtrar e interpretar os dados do banco.
-
 ## Tecnologias e Infraestrutura
 
 A infraestrutura foi desenhada pensando em escalabilidade e facilidade de deploy na nuvem.
@@ -27,7 +24,6 @@ A infraestrutura foi desenhada pensando em escalabilidade e facilidade de deploy
   - Utilizado para armazenar documentos flexíveis de Vagas e Currículos.
   - Uso de *Text Index* para busca e recomendação.
 - **Geolocalização:** PyDeck
-- **LLM/IA:** OpenAI API (Integração RAG)
 
 ### Estrutura do Banco de Dados (MongoDB)
 Foram utilizadas duas coleções principais como dataset `labbd`:
@@ -35,9 +31,8 @@ Foram utilizadas duas coleções principais como dataset `labbd`:
 2. **curriculos**: Armazena dados pessoais, formação, skills e experiência profissional.
 
 ## Informações de Entrega do Projeto
-> login e senha mongodb = login: gustavomarco_db_user / senha: labbd123
-
 > https://cloud.mongodb.com/v2/691ec15ac98ec91e5d8aa887#/overview
+> login e senha mongodb = login: gustavomarco_db_user / senha: labbd123
 
 > Administrador do site = login: admin / senha: admin123
 
