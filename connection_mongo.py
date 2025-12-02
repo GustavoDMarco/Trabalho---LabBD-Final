@@ -1,10 +1,15 @@
-import os
+import streamlit as st
+import time
 from pymongo import MongoClient
+import os
 
 MONGO_URI = os.environ.get("MONGO_URI")
 client = MongoClient(MONGO_URI)
 
-db = client["lab-bd"]  # confirme o nome do banco no Atlas
+# Banco para currículos
+db_curriculos = client["curriculos"]
+curriculos = db_curriculos["curriculos"]
 
-vagas = db["vagas"]
-curriculos = db["curriculos"]
+# Banco para vagas
+db_vagas = client["vagas"]
+vagas = db_vagas["vagas"]
